@@ -382,6 +382,330 @@
             margin-bottom: 10px;
             color: var(--primary);
         }
+
+        /* Interactive Demo Section */
+        .demo-section {
+            background: var(--light);
+            border-radius: 15px;
+            padding: 40px;
+            margin-top: 50px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .demo-container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        
+        .demo-header {
+            background: var(--primary);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .demo-header .brand {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        .demo-header .tagline {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .demo-content {
+            padding: 30px;
+        }
+        
+        .demo-step {
+            display: none;
+        }
+        
+        .demo-step.active {
+            display: block;
+        }
+        
+        .demo-title {
+            text-align: center;
+            margin-bottom: 25px;
+            color: var(--dark);
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .demo-form-group {
+            margin-bottom: 20px;
+        }
+        
+        .demo-form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #555;
+        }
+        
+        .demo-form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e1e5e9;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .demo-form-control:focus {
+            border-color: var(--primary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(44, 90, 160, 0.1);
+        }
+        
+        .phone-prefix {
+            display: flex;
+            align-items: center;
+        }
+        
+        .phone-prefix span {
+            background: #f8f9fa;
+            padding: 12px 15px;
+            border: 2px solid #e1e5e9;
+            border-right: none;
+            border-radius: 8px 0 0 8px;
+            color: #666;
+        }
+        
+        .phone-prefix input {
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        
+        .checkbox-group input {
+            margin-right: 10px;
+            margin-top: 3px;
+        }
+        
+        .checkbox-group label {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .demo-btn {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        .demo-btn:hover {
+            background: #1e3f73;
+            transform: translateY(-2px);
+        }
+        
+        .demo-btn-secondary {
+            background: var(--secondary);
+        }
+        
+        .demo-btn-secondary:hover {
+            background: #cc5500;
+        }
+        
+        .demo-btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+        
+        .demo-btn-outline:hover {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .button-group .demo-btn {
+            flex: 1;
+        }
+        
+        .plan-card {
+            border: 2px solid #e1e5e9;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .plan-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .plan-card.selected {
+            border-color: var(--secondary);
+            background: rgba(255, 107, 0, 0.05);
+        }
+        
+        .plan-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .plan-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--dark);
+        }
+        
+        .plan-price {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1.2rem;
+        }
+        
+        .plan-details {
+            list-style: none;
+            margin-bottom: 15px;
+        }
+        
+        .plan-details li {
+            padding: 5px 0;
+            display: flex;
+            align-items: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .plan-details li::before {
+            content: '✓';
+            color: var(--success);
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        .progress-bar {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin-bottom: 30px;
+        }
+        
+        .progress-bar::before {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #e1e5e9;
+            z-index: 1;
+        }
+        
+        .progress-step {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #e1e5e9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            color: #999;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .progress-step.active {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .progress-step.completed {
+            background: var(--success);
+            color: white;
+        }
+        
+        .success-message {
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        .success-icon {
+            font-size: 4rem;
+            color: var(--success);
+            margin-bottom: 20px;
+        }
+        
+        .success-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+        
+        .success-details {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .plan-summary {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .user-info {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        
+        .info-label {
+            font-weight: 500;
+            color: #666;
+        }
+        
+        .info-value {
+            color: var(--dark);
+        }
         
         /* Testimonials Section */
         .testimonials {
@@ -496,6 +820,130 @@
             height: 150px;
             resize: vertical;
         }
+
+        /* Form Status Messages */
+        .form-status {
+            padding: 12px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            display: none;
+        }
+        
+        .form-status.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .form-status.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            overflow-y: auto;
+            padding: 2rem 0;
+        }
+
+        .modal-content {
+            background-color: white;
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .modal-header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 1.5rem 2rem;
+            border-radius: 8px 8px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-header h2 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .close-modal {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .close-modal:hover {
+            transform: scale(1.2);
+        }
+
+        .modal-body {
+            padding: 2rem;
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+
+        .policy-link {
+            color: var(--secondary);
+            text-decoration: underline;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .policy-link:hover {
+            color: var(--primary);
+        }
+
+        .policy-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #eee;
+        }
+
+        .policy-card .section {
+            margin-bottom: 1.5rem;
+        }
+
+        .policy-card .section h3 {
+            color: var(--secondary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem;
+        }
+
+        .policy-card .section ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .policy-card .section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .policy-card .highlight {
+            background-color: rgba(243, 156, 18, 0.1);
+            border-left: 4px solid var(--secondary);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+        }
         
         /* Footer */
         footer {
@@ -592,6 +1040,34 @@
             letter-spacing: 1px;
         }
         
+        /* Payment Method Styles */
+        .payment-methods {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+        
+        .payment-method {
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .payment-method.mtn {
+            background: #ffcc00;
+        }
+        
+        .payment-method.airtel {
+            background: #ff6600;
+        }
+        
+        .payment-method.visa {
+            background: #1a1f71;
+            color: white;
+        }
+        
         /* Responsive Styles */
         @media (max-width: 992px) {
             .coverage-content {
@@ -605,6 +1081,10 @@
             .steps {
                 flex-direction: column;
                 gap: 40px;
+            }
+
+            .demo-container {
+                max-width: 100%;
             }
         }
         
@@ -644,6 +1124,19 @@
             .logo-text {
                 display: none;
             }
+
+            .demo-section {
+                padding: 20px;
+            }
+
+            .modal-content {
+                width: 95%;
+                margin: 1rem auto;
+            }
+
+            .modal-body {
+                padding: 1rem;
+            }
         }
     </style>
 </head>
@@ -652,19 +1145,11 @@
     <header>
         <div class="container header-container">
             <div class="logo">
-                <!-- Logo Placeholder - Replace with actual image 
-                <div class="logo-placeholder">
-                    <div class="brand">Chizi Lynx</div>
-                    <div class="tagline">WI-FI HOTSPOT</div>
-                </div> -->
-                <!-- Uncomment below and remove the placeholder when you have the actual logo image -->
-                
                 <img src="ChiziLynxLogo.png" alt="ChiziLynx.Net" class="logo-img">
                 <div class="logo-text">
                     <div class="brand">ChiziLynx.Net</div>
                     <div class="tagline">WI-FI HOTSPOT</div>
                 </div>
-                
             </div>
             <div class="mobile-menu">☰</div>
             <nav>
@@ -686,7 +1171,7 @@
             <h1>Fast & Reliable Wi-Fi Hotspot Services</h1>
             <p>We provide affordable and reliable wireless internet access through prepaid hotspot connections in residential areas, trading centers, and institutions.</p>
             <a href="#pricing" class="btn">View Our Plans</a>
-            <a href="#contact" class="btn btn-secondary">Get Connected</a>
+            <a href="#how-it-works" class="btn btn-secondary">See How It Works</a>
         </div>
     </section>
 
@@ -705,13 +1190,13 @@
                 </div>
                 <div class="service-card">
                     <div class="service-icon">💳</div>
-                    <h3>Prepaid Hotspot Connections</h3>
-                    <p>Convenient prepaid packages with various durations and data limits to choose from.</p>
+                    <h3>Multiple Payment Options</h3>
+                    <p>Easy payment via MTN Mobile Money, Airtel Money, or Visa debit card for quick and secure transactions.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">📱</div>
-                    <h3>Payments</h3>
-                    <p>Easy payment via MTN or Airtel mobile money for quick and secure transactions.</p>
+                    <h3>Prepaid Hotspot Connections</h3>
+                    <p>Convenient prepaid packages with various durations and data limits to choose from.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🔒</div>
@@ -727,10 +1212,9 @@
         <div class="container">
             <div class="section-title">
                 <h2>Internet Packages</h2>
-                <p>Choose the plan that works best for you. All packages can be purchased using MTN or Airtel mobile money.</p>
+                <p>Choose the plan that works best for you. All packages can be purchased using MTN Mobile Money, Airtel Money, or Visa debit card.</p>
             </div>
             <div class="pricing-grid">
-              
                 <div class="pricing-card">
                     <h3>Daily Plan</h3>
                     <div class="price">UGX 1,000 <span>/ day</span></div>
@@ -739,7 +1223,7 @@
                         <li>Standard speed</li>
                         <li>Single device</li>
                     </ul>
-                    <a href="#contact" class="btn">Get Started</a>
+                    <a href="#how-it-works" class="btn">Get Started</a>
                 </div>
                 <div class="pricing-card featured">
                     <h3>Weekly Plan</h3>
@@ -749,27 +1233,27 @@
                         <li>High speed</li>
                         <li>Single device</li>
                     </ul>
-                    <a href="#contact" class="btn">Get Started</a>
+                    <a href="#how-it-works" class="btn">Get Started</a>
                 </div>
-                <div class="pricing-card featured">
-                    <h3>Weekly Plan</h3>
+                <div class="pricing-card">
+                    <h3>Monthly Plan</h3>
                     <div class="price">UGX 30,000 <span>/ month</span></div>
                     <ul class="pricing-features">
                         <li>30-day access</li>
                         <li>High speed</li>
                         <li>Single device</li>
                     </ul>
-                    <a href="#contact" class="btn">Get Started</a>
+                    <a href="#how-it-works" class="btn">Get Started</a>
                 </div>
                 <div class="pricing-card">
-                    <h3>Monthly Plan</h3>
+                    <h3>Premium Monthly Plan</h3>
                     <div class="price">UGX 35,000 <span>/ month</span></div>
                     <ul class="pricing-features">
                         <li>30-day access</li>
                         <li>Premium speed</li>
                         <li>Up to 4 devices</li>
                     </ul>
-                    <a href="#contact" class="btn">Get Started</a>
+                    <a href="#how-it-works" class="btn">Get Started</a>
                 </div>
             </div>
         </div>
@@ -788,7 +1272,7 @@
                     <h3>Where You Can Find Our Services</h3>
                     <p>Our Wi-Fi access points are strategically installed in key locations to ensure reliable connectivity for our customers.</p>
                     <ul class="coverage-list">
-                        <li>Residential areas across [your area]</li>
+                        <li>Residential areas across Luzira and surrounding areas</li>
                         <li>Trading centers and markets</li>
                         <li>Educational institutions</li>
                         <li>Business districts</li>
@@ -820,7 +1304,7 @@
                 <div class="step">
                     <div class="step-number">2</div>
                     <h3>Make Payment</h3>
-                    <p>Use MTN or Airtel mobile money to pay for your selected package.</p>
+                    <p>Use MTN Mobile Money, Airtel Money, or Visa debit card to pay for your selected package.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
@@ -831,6 +1315,185 @@
                     <div class="step-number">4</div>
                     <h3>Connect & Browse</h3>
                     <p>Connect to our Wi-Fi network and enter your credentials to start browsing.</p>
+                </div>
+            </div>
+
+            <!-- Interactive Demo Section -->
+            <div class="demo-section">
+                <h3 style="text-align: center; margin-bottom: 30px; color: var(--primary);">Try Our Interactive Signup Demo</h3>
+                <div class="demo-container">
+                    <div class="demo-header">
+                        <div class="brand">ChiziLynx</div>
+                        <div class="tagline">WI-FI HOTSPOT</div>
+                    </div>
+                    
+                    <div class="demo-content">
+                        <!-- Progress Bar -->
+                        <div class="progress-bar">
+                            <div class="progress-step completed">1</div>
+                            <div class="progress-step completed">2</div>
+                            <div class="progress-step active">3</div>
+                            <div class="progress-step">4</div>
+                        </div>
+                        
+                        <!-- Step 1: Phone Number -->
+                        <div class="demo-step active" id="demo-step1">
+                            <h2 class="demo-title">Login</h2>
+                            <div class="demo-form-group">
+                                <label for="demo-phone">Phone number</label>
+                                <div class="phone-prefix">
+                                    <span>+256</span>
+                                    <input type="tel" id="demo-phone" class="demo-form-control" placeholder="706 703 757" value="706 703 757">
+                                </div>
+                            </div>
+                            <button class="demo-btn" onclick="demoNextStep(2)">Next</button>
+                        </div>
+                        
+                        <!-- Step 2: User Details -->
+                        <div class="demo-step" id="demo-step2">
+                            <h2 class="demo-title">Login</h2>
+                            
+                            <div class="user-info">
+                                <div class="info-row">
+                                    <span class="info-label">Phone number</span>
+                                    <span class="info-value" id="demo-display-phone">+256 706 703 757</span>
+                                </div>
+                            </div>
+                            
+                            <div class="demo-form-group">
+                                <label for="demo-email">Email</label>
+                                <input type="email" id="demo-email" class="demo-form-control" placeholder="Enter your email">
+                            </div>
+                            
+                            <div class="demo-form-group">
+                                <label for="demo-name">Name</label>
+                                <input type="text" id="demo-name" class="demo-form-control" placeholder="Enter your name">
+                            </div>
+                            
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="demo-terms">
+                                <label for="demo-terms">I agree to the <span class="policy-link" onclick="openPolicyModal()">Terms and Conditions</span> and have read the Refund Policy</label>
+                            </div>
+                            
+                            <div class="button-group">
+                                <button class="demo-btn demo-btn-outline" onclick="demoPrevStep(1)">Back</button>
+                                <button class="demo-btn" onclick="demoNextStep(3)">Finish</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3: Plan Selection -->
+                        <div class="demo-step" id="demo-step3">
+                            <h2 class="demo-title">Please choose a plan</h2>
+                            
+                            <div class="plan-card selected" onclick="demoSelectPlan(1)">
+                                <div class="plan-header">
+                                    <div class="plan-name">ChiziLynx Wolf 24hrs</div>
+                                    <div class="plan-price">UGX 1,000</div>
+                                </div>
+                                <ul class="plan-details">
+                                    <li>Expires in 1 day</li>
+                                    <li>Online time limit: 1 day</li>
+                                    <li>Traffic limit: 4 GB</li>
+                                </ul>
+                                <button class="demo-btn demo-btn-secondary">Buy for 1,000.00</button>
+                            </div>
+                            
+                            <div class="plan-card" onclick="demoSelectPlan(2)">
+                                <div class="plan-header">
+                                    <div class="plan-name">ChiziLynx Wolf 30 days</div>
+                                    <div class="plan-price">UGX 30,000</div>
+                                </div>
+                                <ul class="plan-details">
+                                    <li>Expires in 30 days</li>
+                                    <li>Online time limit: unlimited</li>
+                                    <li>Traffic limit: 5 GB</li>
+                                </ul>
+                                <button class="demo-btn demo-btn-outline">Buy for 30,000.00</button>
+                            </div>
+                            
+                            <div class="plan-card" onclick="demoSelectPlan(3)">
+                                <div class="plan-header">
+                                    <div class="plan-name">ChiziLynx 3Wolf 30days</div>
+                                    <div class="plan-price">UGX 35,000</div>
+                                </div>
+                                <ul class="plan-details">
+                                    <li>Expires in 30 days</li>
+                                    <li>Online time limit: unlimited</li>
+                                    <li>Traffic limit: 5 GB</li>
+                                </ul>
+                                <button class="demo-btn demo-btn-outline">Buy for 35,000.00</button>
+                            </div>
+                            
+                            <div class="plan-card" onclick="demoSelectPlan(4)">
+                                <div class="plan-header">
+                                    <div class="plan-name">ChiziLynx Wolf 3hrs</div>
+                                    <div class="plan-price">UGX 500</div>
+                                </div>
+                                <ul class="plan-details">
+                                    <li>Expires in 3 hours</li>
+                                    <li>Online time limit: 3 hours</li>
+                                    <li>Traffic limit: 2 GB</li>
+                                </ul>
+                                <button class="demo-btn demo-btn-outline">Buy for 500.00</button>
+                            </div>
+                            
+                            <div class="button-group">
+                                <button class="demo-btn demo-btn-outline" onclick="demoPrevStep(2)">Back</button>
+                                <button class="demo-btn" onclick="demoNextStep(4)">Continue</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 4: Confirmation -->
+                        <div class="demo-step" id="demo-step4">
+                            <div class="success-message">
+                                <div class="success-icon">✓</div>
+                                <h2 class="success-title">Purchase Successful!</h2>
+                                <p class="success-details">Your Wi-Fi plan has been activated successfully.</p>
+                                
+                                <div class="plan-summary">
+                                    <div class="info-row">
+                                        <span class="info-label">Plan</span>
+                                        <span class="info-value" id="demo-summary-plan">ChiziLynx Wolf 24hrs</span>
+                                    </div>
+                                    <div class="info-row">
+                                        <span class="info-label">Price</span>
+                                        <span class="info-value" id="demo-summary-price">UGX 1,000</span>
+                                    </div>
+                                    <div class="info-row">
+                                        <span class="info-label">Expires</span>
+                                        <span class="info-value" id="demo-summary-expiry">in 1 day</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="user-info">
+                                    <div class="info-row">
+                                        <span class="info-label">Name</span>
+                                        <span class="info-value" id="demo-summary-name">-</span>
+                                    </div>
+                                    <div class="info-row">
+                                        <span class="info-label">Phone</span>
+                                        <span class="info-value" id="demo-summary-phone">+256 706 703 757</span>
+                                    </div>
+                                    <div class="info-row">
+                                        <span class="info-label">Email</span>
+                                        <span class="info-value" id="demo-summary-email">-</span>
+                                    </div>
+                                </div>
+
+                                <div class="payment-methods">
+                                    <span class="payment-method mtn">MTN Mobile Money</span>
+                                    <span class="payment-method airtel">Airtel Money</span>
+                                    <span class="payment-method visa">Visa Debit Card</span>
+                                </div>
+                                
+                                <p style="margin: 20px 0; color: #666; font-size: 0.9rem;">
+                                    Your login credentials will be sent to your phone via SMS.
+                                </p>
+                                
+                                <button class="demo-btn" onclick="demoRestart()">Start New Demo</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -846,7 +1509,7 @@
             <div class="testimonial-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        The weekly package is perfect for my small business. The connection is reliable and the payment process is so convenient with mobile money.
+                        The weekly package is perfect for my small business. The connection is reliable and the payment process is so convenient with multiple options.
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">JM</div>
@@ -858,7 +1521,7 @@
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        As a student, the affordable daily plans help me with my research and online classes. The speed is great for video calls and downloading materials.
+                        As a student, the affordable daily plans help me with my research and online classes. I love that I can pay with my Visa card.
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">SN</div>
@@ -870,7 +1533,7 @@
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        I've tried several internet providers in this area, but ChiziLynx.Net offers the most consistent service. Their customer support is also very responsive.
+                        I've tried several internet providers in this area, but ChiziLynx.Net offers the most consistent service. Their multiple payment options make it so convenient.
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">RM</div>
@@ -900,21 +1563,21 @@
                             <i>📍</i>
                             <div>
                                 <strong>Address</strong><br>
-                                LUZIRA:
+                                Luzira, Kampala, Uganda
                             </div>
                         </li>
                         <li>
                             <i>📞</i>
                             <div>
                                 <strong>Phone</strong><br>
-                                +256 761 30 00 41
+                                +256 706 703 757
                             </div>
                         </li>
                         <li>
                             <i>✉️</i>
                             <div>
                                 <strong>Email</strong><br>
-                                info@chizilynx.net
+                                chizicash99@gmail.com
                             </div>
                         </li>
                         <li>
@@ -927,22 +1590,23 @@
                     </ul>
                 </div>
                 <div class="contact-form">
-                    <form>
+                    <div class="form-status" id="formStatus"></div>
+                    <form id="contactForm">
                         <div class="form-group">
                             <label for="name">Full Name</label>
-                            <input type="text" id="name" required>
+                            <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" required>
+                            <input type="tel" id="phone" name="phone" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email Address</label>
-                            <input type="email" id="email">
+                            <input type="email" id="email" name="email">
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" required></textarea>
+                            <textarea id="message" name="message" required></textarea>
                         </div>
                         <button type="submit" class="btn">Send Message</button>
                     </form>
@@ -956,16 +1620,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <!-- Logo in Footer -->
-                   <!-- <div class="logo-placeholder" style="margin-bottom: 20px;">
-                        <div class="brand">Chizi Lynx</div>
-                        <div class="tagline">WI-FI HOTSPOT</div>
-                    </div> -->
-                    <!-- Uncomment below and remove the placeholder when you have the actual logo image -->
-                    
                     <img src="ChiziLynxLogo.png" alt="ChiziLynx.Net" class="logo-img" style="margin-bottom: 20px;">
-                    
-                    <p>Providing reliable and affordable wireless internet access through prepaid hotspot connections in [your area].</p>
+                    <p>Providing reliable and affordable wireless internet access through prepaid hotspot connections in Luzira and surrounding areas.</p>
                     <div class="social-links">
                         <a href="#">FB</a>
                         <a href="#">TW</a>
@@ -990,15 +1646,16 @@
                         <li><a href="#">Troubleshooting</a></li>
                         <li><a href="#">Terms of Service</a></li>
                         <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#contact">Contact Us winga</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Payment Methods</h3>
                     <p>We accept payments via:</p>
-                    <div style="margin-top: 15px;">
-                        <span style="background: #ffcc00; padding: 5px 10px; border-radius: 4px; margin-right: 10px; display: inline-block; margin-bottom: 10px;">MTN Mobile Money</span>
-                        <span style="background: #ff6600; padding: 5px 10px; border-radius: 4px; display: inline-block; margin-bottom: 10px;">Airtel Money</span>
+                    <div class="payment-methods">
+                        <span class="payment-method mtn">MTN Mobile Money</span>
+                        <span class="payment-method airtel">Airtel Money</span>
+                        <span class="payment-method visa">Visa Debit Card</span>
                     </div>
                 </div>
             </div>
@@ -1007,6 +1664,91 @@
             </div>
         </div>
     </footer>
+
+    <!-- Refund Policy Modal -->
+    <div class="modal" id="policyModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>REFUND AND CANCELLATION POLICY</h2>
+                <button class="close-modal" id="closePolicyModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="policy-card">
+                    <div class="section">
+                        <h3>1. Scope</h3>
+                        <p>This policy applies to all clients receiving internet, hotspot, ICT installation, networking, and related technical services from Chizilynx Investments Company SMC Limited.</p>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>2. Service Cancellations by the Client</h3>
+                        <ul>
+                            <li>A client may cancel scheduled ICT or networking services if written notice is received at least 5 days before the service date.</li>
+                            <li>Cancellations less than 5 days but more than 48 hours before the service date attract a 30 percent cancellation fee.</li>
+                            <li>Cancellations within 48 hours or on the same day are charged at 100 percent.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>3. Refunds for Internet or Hotspot Services</h3>
+                        <ul>
+                            <li>Internet and hotspot subscriptions are non refundable once activated.</li>
+                            <li>Refunds only apply if the company completely fails to deliver service due to reasons within its control.</li>
+                            <li>Issues caused by power outages, client equipment failure, interference, or environmental limitations do not qualify for refunds.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>4. Refunds for ICT and Networking Services</h3>
+                        <ul>
+                            <li>If the company fails to deliver agreed services, the client receives a refund of the unused portion or a free correction.</li>
+                            <li>Dissatisfaction must be reported within 3 days for review.</li>
+                            <li>Materials purchased specifically for a job are non refundable once installed or opened.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>5. Equipment Purchases</h3>
+                        <ul>
+                            <li>Equipment is refundable only if unused, sealed, and returned within 48 hours.</li>
+                            <li>Once installed or powered, the equipment becomes non refundable.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>6. Hotspot Vouchers and Data Packages</h3>
+                        <ul>
+                            <li>Vouchers and time based access are non refundable once issued.</li>
+                            <li>Validity may be extended only if the service disruption was caused by the company.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>7. Installation Fees</h3>
+                        <p>Installation, configuration, and site survey fees are non refundable once performed.</p>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>8. No Refund for Third Party Failures</h3>
+                        <p>No refunds are allowed due to telecom outages, national internet issues, client device problems, or environmental interference.</p>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>9. Processing of Refunds</h3>
+                        <p>Approved refunds are processed within 14 business days via bank transfer or mobile money.</p>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>10. Amendments</h3>
+                        <p>This policy may be updated by Chizilynx Investments Company SMC Limited at any time.</p>
+                    </div>
+                    
+                    <div class="highlight">
+                        <p><strong>Important Notice:</strong> Please read this policy carefully. By using our services, you acknowledge that you have read, understood, and agree to be bound by this Refund and Cancellation Policy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
@@ -1038,11 +1780,39 @@
             });
         });
 
-        // Simple Form Submission Handler
-        document.querySelector('.contact-form form').addEventListener('submit', function(e) {
+        // Contact Form Submission Handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Thank you for your message! We will get back to you soon.');
-            this.reset();
+            
+            const formData = new FormData(this);
+            const formStatus = document.getElementById('formStatus');
+            
+            // Show loading state
+            formStatus.style.display = 'block';
+            formStatus.className = 'form-status';
+            formStatus.textContent = 'Sending your message...';
+            
+            // Using Formspree to send email to chizicash99@gmail.com
+            fetch('https://formspree.io/f/mjvjewjq', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    formStatus.className = 'form-status success';
+                    formStatus.textContent = 'Thank you for your message! We will get back to you soon.';
+                    this.reset();
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            })
+            .catch(error => {
+                formStatus.className = 'form-status error';
+                formStatus.textContent = 'Sorry, there was an error sending your message. Please try again or contact us directly at chizicash99@gmail.com';
+            });
         });
 
         // Map and Location Detection
@@ -1185,12 +1955,156 @@
             }
         }
 
-        // Initialize map when page loads
+        // Interactive Demo Functions
+        let demoCurrentStep = 1;
+        let demoSelectedPlan = 1;
+        
+        function demoShowStep(step) {
+            // Hide all steps
+            document.querySelectorAll('.demo-step').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            // Show the current step
+            document.getElementById(`demo-step${step}`).classList.add('active');
+            
+            // Update progress bar
+            document.querySelectorAll('.progress-step').forEach((el, index) => {
+                el.classList.remove('active', 'completed');
+                if (index + 1 < step) {
+                    el.classList.add('completed');
+                } else if (index + 1 === step) {
+                    el.classList.add('active');
+                }
+            });
+            
+            demoCurrentStep = step;
+        }
+        
+        function demoNextStep(step) {
+            // Validate current step before proceeding
+            if (demoCurrentStep === 1) {
+                const phone = document.getElementById('demo-phone').value;
+                if (!phone) {
+                    alert('Please enter your phone number');
+                    return;
+                }
+                document.getElementById('demo-display-phone').textContent = `+256 ${phone}`;
+                document.getElementById('demo-summary-phone').textContent = `+256 ${phone}`;
+            } else if (demoCurrentStep === 2) {
+                const name = document.getElementById('demo-name').value;
+                const email = document.getElementById('demo-email').value;
+                const terms = document.getElementById('demo-terms').checked;
+                
+                if (!name || !email) {
+                    alert('Please fill in all fields');
+                    return;
+                }
+                
+                if (!terms) {
+                    alert('Please agree to the Terms and Conditions');
+                    return;
+                }
+                
+                document.getElementById('demo-summary-name').textContent = name;
+                document.getElementById('demo-summary-email').textContent = email;
+            } else if (demoCurrentStep === 3) {
+                demoUpdateSummary();
+            }
+            
+            demoShowStep(step);
+        }
+        
+        function demoPrevStep(step) {
+            demoShowStep(step);
+        }
+        
+        function demoSelectPlan(planId) {
+            demoSelectedPlan = planId;
+            
+            // Remove selected class from all plans
+            document.querySelectorAll('.plan-card').forEach(el => {
+                el.classList.remove('selected');
+            });
+            
+            // Add selected class to clicked plan
+            document.querySelectorAll('.plan-card')[planId - 1].classList.add('selected');
+            
+            // Update buttons
+            document.querySelectorAll('.plan-card .demo-btn').forEach((btn, index) => {
+                if (index === planId - 1) {
+                    btn.classList.remove('demo-btn-outline');
+                    btn.classList.add('demo-btn-secondary');
+                } else {
+                    btn.classList.remove('demo-btn-secondary');
+                    btn.classList.add('demo-btn-outline');
+                }
+            });
+        }
+        
+        function demoUpdateSummary() {
+            const plans = [
+                { name: 'ChiziLynx Wolf 24hrs', price: 'UGX 1,000', expiry: 'in 1 day' },
+                { name: 'ChiziLynx Wolf 30 days', price: 'UGX 30,000', expiry: 'in 30 days' },
+                { name: 'ChiziLynx 3Wolf 30days', price: 'UGX 35,000', expiry: 'in 30 days' },
+                { name: 'ChiziLynx Wolf 3hrs', price: 'UGX 500', expiry: 'in 3 hours' }
+            ];
+            
+            const plan = plans[demoSelectedPlan - 1];
+            document.getElementById('demo-summary-plan').textContent = plan.name;
+            document.getElementById('demo-summary-price').textContent = plan.price;
+            document.getElementById('demo-summary-expiry').textContent = plan.expiry;
+        }
+        
+        function demoRestart() {
+            // Reset form
+            document.getElementById('demo-phone').value = '706 703 757';
+            document.getElementById('demo-email').value = '';
+            document.getElementById('demo-name').value = '';
+            document.getElementById('demo-terms').checked = false;
+            
+            // Reset to first step
+            demoShowStep(1);
+            demoSelectPlan(1);
+        }
+
+        // Policy Modal Functionality
+        const policyModal = document.getElementById('policyModal');
+        const closePolicyModal = document.getElementById('closePolicyModal');
+
+        // Function to open policy modal
+        function openPolicyModal() {
+            policyModal.style.display = 'block';
+        }
+
+        // Close modal when X is clicked
+        closePolicyModal.addEventListener('click', function() {
+            policyModal.style.display = 'none';
+        });
+
+        // Close modal when clicking outside
+        window.addEventListener('click', function(event) {
+            if (event.target === policyModal) {
+                policyModal.style.display = 'none';
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && policyModal.style.display === 'block') {
+                policyModal.style.display = 'none';
+            }
+        });
+
+        // Initialize map and demo when page loads
         window.addEventListener('DOMContentLoaded', function() {
             initMap();
             
             // Add event listener to the detect location button
             document.getElementById('detect-location').addEventListener('click', detectLocation);
+            
+            // Initialize demo
+            demoSelectPlan(1);
         });
     </script>
 </body>
